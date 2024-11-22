@@ -1,0 +1,17 @@
+html, body, nav, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+    background-color: #000;
+    color: #FFF;
+}
