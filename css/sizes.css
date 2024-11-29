@@ -1,0 +1,88 @@
+body {
+    padding: 8px;
+}
+
+main {
+    padding: 0px 8px;
+    max-height: calc(100% - 130px);
+}
+
+header {
+    height: 48px;
+    padding: 8px;
+}
+
+footer {
+    height: 48px;
+    padding: 11px 24px 7px 15px;
+}
+
+.nav {
+    height: 100%;
+}
+
+.img {
+    width: 100%;
+}
+
+.padding_charts {
+    padding: 12px;
+    min-width: 162.672px;
+    max-width: 213.078px;
+}
+
+.padding_section_charts {
+    padding: 4px 18px 72px;
+}
+
+.width_section1 {
+    max-width: 360px;
+    min-width: 280px;
+}
+
+.wrap_padding {
+    padding: 0px 24px;
+    margin-top: 32px;
+}
+
+.padding_cookies {
+    padding: 0px 24px;
+    height: 22px;
+    margin-bottom: 24px;
+}
+
+.element_margin {
+    margin-bottom: 4px;
+    margin-right: 16px;
+    height: 29px;
+}
+
+.language {
+    margin-left: 24px;
+    height: 32px;
+    width: 96px;
+    margin-bottom: 24px;
+}
+
+.padding_library {
+    padding: 12px 16px 36px;
+    height: 40px;
+}
+
+.margin0 {
+    margin: 0;
+}
+
+.line {
+    height: 1px;
+    background-color: #2a2a2a;
+    margin-bottom: 24px;
+}
+
+.element_height {
+    height: 256px;
+}
+
+.padding_end {
+    padding-top: 16px;
+}

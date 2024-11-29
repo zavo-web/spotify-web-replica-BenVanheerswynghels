@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<title>Spotify - Web Player replica</title>
+		<link rel="icon" href="Images/Spotify.png"/>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<header>
 			<nav>
-				<ul class="row space_between">
-					<li>icon</li>
-					<li>
-						<button></button>
-						<li>
-							<input type="text">
-							<button></button>
-						</li>
+				<ul class="row space_between height">
+					<li><img src="svg/Spotify.svg" alt="Spotify icon"></li>
+					<li class="row">
+						<button><img src="svg/Home.svg" alt="Home icon"></button>
+						<section class="center"><label for="Search"></label>
+						<img src="svg/Search.svg" alt="Search icon">
+						<input type="text" id="Search" placeholder="What do you want to play?">
+						<img src="svg/Browse.svg" alt="Browse icon"></section>
 					</li>
-					<li>
-						<button>Sighn up</button>
+					<li class="center">
+						<button>Sign up</button>
 						<button>Log in</button>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<main class="row">
-			<section>
-				<ul class="row space_between">
-					<li>
-						<a class="row" href="">icon<p>Your Library</p></a>
+			<section class="width_section1">
+				<ul class="row space_between center padding_library">
+					<li class="row center">
+						<img src="svg/Library.svg" alt="Library icon"><p>Your Library</p>
 					</li>
 					<li>
-						<button>+</button>
+						<button><img src="svg/Add.svg" alt="Add icon"></button>
 					</li>
 				</ul>
-				<ul>
+				<ul class="overflow">
 					<ul>
 						<li>Create your first playlist</li>
 						<li>It's easy, we'll help you</li>
@@ -44,18 +46,18 @@
 						<button>Create playlist</button>
 					</ul>
 				</ul>
-				<ul>
-					<li>Legal</li>
-					<li>Safety & Privacy Center</li>
-					<li>Privacy Policy</li>
-					<li>Cookie Settings</li>
-					<li>About Ads</li>
-					<li>Accessibility</li>
+				<ul class="row wrap wrap_padding">
+					<li class="element_margin center">Legal</li>
+					<li class="element_margin center">Safety & Privacy Center</li>
+					<li class="element_margin center">Privacy Policy</li>
+					<li class="element_margin center">Cookie Settings</li>
+					<li class="element_margin center">About Ads</li>
+					<li class="element_margin center">Accessibility</li>
 				</ul>
-				<p>Cookies</p>
-				<button>English</button>
+				<p class="padding_cookies">Cookies</p>
+				<button class="language row"><img src="svg/Language.svg" alt="Language">English</button>
 			</section>
-			<section>
+			<section class="overflow padding_section_charts">
 				<ul>
 					<li>
 						<ul class="row space_between">
@@ -63,33 +65,33 @@
 							<li>Show all</li>
 						</ul>
 						<ul class="row">
-							<li>
-								<img src="" alt="Lady Gaga">
+							<li class="padding_charts">
+								<img class="img" src="Images/Artiesten/Lady Gaga.png" alt="Lady Gaga">
 								<h3>Lady Gaga</h3>
 								<p>Artist</p>
 							</li>
-							<li>
-								<img src="" alt="Billie Eilish">
+							<li class="padding_charts">
+								<img class="img" src="Images/Artiesten/Billie Eilish.png" alt="Billie Eilish">
 								<h3>Billie Eilish</h3>
 								<p>Artist</p>
 							</li>
-							<li>
-								<img src="" alt="David Guetta">
+							<li class="padding_charts">
+								<img class="img" src="Images/Artiesten/David Guetta.png" alt="David Guetta">
 								<h3>David Guetta</h3>
 								<p>Artist</p>
 							</li>
-							<li>
-								<img src="" alt="Coldplay">
+							<li class="padding_charts">
+								<img class="img" src="Images/Artiesten/Cold Play.png" alt="Coldplay">
 								<h3>Coldplay</h3>
 								<p>Artist</p>
 							</li>
-							<li>
-								<img src="" alt="The Weekend">
+							<li class="padding_charts">
+								<img class="img" src="Images/Artiesten/The Weekend.png" alt="The Weekend">
 								<h3>The Weekend</h3>
 								<p>Artist</p>
 							</li>
-							<li>
-								<img src="" alt="Rihanna">
+							<li class="padding_charts">
+								<img class="img" src="Images/Artiesten/Rihanna.png" alt="Rihanna">
 								<h3>Rihanna</h3>
 								<p>Artist</p>
 							</li>
@@ -101,33 +103,33 @@
 							<li>Show all</li>
 						</ul>
 						<ul class="row">
-							<li>
-								<img src="" alt="HIT ME HARD AND SOFT">
+							<li class="padding_charts">
+								<img class="img" src="Images/Albums and singles/HIT ME HARD AND SOFT.jfif" alt="HIT ME HARD AND SOFT">
 								<h3>HIT ME HARD AND SOFT</h3>
 								<p>Billie Eilish</p>
 							</li>
-							<li>
-								<img src="" alt="A LA VIE A LA MORT">
+							<li class="padding_charts">
+								<img class="img" src="Images/Albums and singles/A LA VIE A LA MORT.jfif" alt="A LA VIE A LA MORT">
 								<h3>A LA VIE A LA MORT</h3>
 								<p>SDM</p>
 							</li>
-							<li>
-								<img src="" alt="J'AI MENTI.">
+							<li class="padding_charts">
+								<img class="img" src="Images/Albums and singles/J'AI MENTI..jfif" alt="J'AI MENTI.">
 								<h3>J'AI MENTI.</h3>
 								<p>Damso</p>
 							</li>
-							<li>
-								<img src="" alt="Fireworks & Rollerblades">
+							<li class="padding_charts">
+								<img class="img" src="Images/Albums and singles/Fireworks & Rollerblades.jfif" alt="Fireworks & Rollerblades">
 								<h3>Fireworks & Rollerblades</h3>
 								<p>Benson Boone</p>
 							</li>
-							<li>
-								<img src="" alt="Short n' Sweet">
+							<li class="padding_charts">
+								<img class="img" src="Images/Albums and singles/Short n' Sweet.jfif" alt="Short n' Sweet">
 								<h3>Short n' Sweet</h3>
 								<p>Sabrina Carpenter</p>
 							</li>
-							<li>
-								<img src="" alt="From Zero">
+							<li class="padding_charts">
+								<img class="img" src="Images/Albums and singles/From Zero.jfif" alt="From Zero">
 								<h3>From Zero</h3>
 								<p>Linkin Park</p>
 							</li>
@@ -139,35 +141,29 @@
 							<li>Show all</li>
 						</ul>
 						<ul class="row">
-							<li>
-								<img src="" alt="ABBA">
-								<p>With Bee Gees, Elton John,
-									Queen and more</p>
+							<li class="padding_charts">
+								<img class="img" src="Images/Radio/ABBA.jfif" alt="ABBA">
+								<p>With Bee Gees, Elton John, Queen and more</p>
 							</li>
-							<li>
-								<img src="" alt="Linkin Park">
-								<p>With Green Day, Limp Bizkit,
-									Evanescence and more</p>
+							<li class="padding_charts">
+								<img class="img" src="Images/Radio/Michael Kiwanuka.jfif" alt="Michael Kiwanuka">
+								<p>With Leon Bridges, Khruangbin, Curtis Harding and more</p>
 							</li>
-							<li>
-								<img src="" alt="The Weeknd">
-								<p>With SZA, The Neighbourhood,
-									Doja Cat and more</p>
+							<li class="padding_charts">
+								<img class="img" src="Images/Radio/Coldplay.jfif" alt="Coldplay">
+								<p>With Harry Styles, Maroon 5, Bruno Mars and more</p>
 							</li>
-							<li>
-								<img src="" alt="Billie Eilish">
-								<p>With Sabrina Carpenter, Lana
-									Del Rey, Olivia Rodrigo and more</p>
+							<li class="padding_charts">
+								<img class="img" src="Images/Radio/Adele.jfif" alt="Adele">
+								<p>With Sam Smith, Bruno Mars, Lady Gaga and more</p>
 							</li>
-							<li>
-								<img src="" alt="Adele">
-								<p>With Sam Smith, Bruno Mars,
-									Coldplay and more</p>
+							<li class="padding_charts">
+								<img class="img" src="Images/Radio/Linkin Park.jfif" alt="Linkin Park">
+								<p>With Limp Bizkit, Green Day, Evanescence and more</p>
 							</li>
-							<li>
-								<img src="" alt="Norah Jones">
-								<p>With Jack Johnson, John Mayer
-									Ray LaMontagne and more</p>
+							<li class="padding_charts">
+								<img class="img" src="Images/Radio/David Guett.jfif" alt="David Guetta">
+								<p>With Calvin Harris, Avicit, Pitbull and more</p>
 							</li>
 						</ul>
 					</li>
@@ -177,61 +173,29 @@
 							<li>Show all</li>
 						</ul>
 						<ul class="row">
-							<li>
-								<img src="" alt="Top Songs global">
+							<li class="padding_charts">
+								<img class="img" src="Images/Featured/Top songs Global.jpg" alt="Top Songs global">
 								<p>Your weekly update of the most played tracks right now - Global.</p>
 							</li>
-							<li>
-								<img src="" alt="Top Songs USA">
+							<li class="padding_charts">
+								<img class="img" src="Images/Featured/Top songs USA.jpg" alt="Top Songs USA">
 								<p>Your weekly update of the most played tracks right now - USA.</p>
 							</li>
-							<li>
-								<img src="" alt="Top 50 GLOBAL">
+							<li class="padding_charts">
+								<img class="img" src="Images/Featured/Top 50 Global.jpg" alt="Top 50 GLOBAL">
 								<p>Your daily update of the most played tracks right now - Global.</p>
 							</li>
-							<li>
-								<img src="" alt="Top 50 USA">
+							<li class="padding_charts">
+								<img class="img" src="Images/Featured/Top 50 USA.jpg" alt="Top 50 USA">
 								<p>Your daily update of the most played tracks right now - USA.</p>
 							</li>
-							<li>
-								<img src="" alt="Viral 50 GLOBAL">
+							<li class="padding_charts">
+								<img class="img" src="Images/Featured/Viral 50 Global.jpg" alt="Viral 50 GLOBAL">
 								<p>Your daily update of the most viral tracks right now - Global.</p>
 							</li>
-							<li>
-								<img src="" alt="Viral 50 USA">
+							<li class="padding_charts">
+								<img class="img" src="Images/Featured/Viral 50 USA.jpg" alt="Viral 50 USA">
 								<p>Your daily update of the most viral tracks right now - USA.</p>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<ul class="row space_between">
-							<li>Featured Charts</li>
-							<li>Show all</li>
-						</ul>
-						<ul class="row">
-							<li>
-								<img src="" alt="Kitchen Swagger">
-								<p>Gettin' figgy with it, bana-na-na-nanana</p>
-							</li>
-							<li>
-								<img src="" alt="Dinner Lounge">
-								<p>Soft electronic music for your dinner...</p>
-							</li>
-							<li>
-								<img src="" alt="Beer & Wings">
-								<p>Cold beer. Hot wings. Great rock.</p>
-							</li>
-							<li>
-								<img src="" alt="Dinner with Friends">
-								<p>The perfect soundtrack to those long nights over dinner</p>
-							</li>
-							<li>
-								<img src="" alt="Dinner Jazz">
-								<p>The gentle sound of some of the greatest voices and...</p>
-							</li>
-							<li>
-								<img src="" alt="Feel Good Dinner">
-								<p>An uplifting yet tasteful dinner playlist with a guaranteed feel...</p>
 							</li>
 						</ul>
 					</li>
@@ -241,40 +205,40 @@
 							<li>Show all</li>
 						</ul>
 						<ul class="row">
-							<li>
-								<img src="" alt="THROWBACK THURSDAY">
-								<p>#SpotifyTBT celebrates 25 years of Enrique. Cover:..</p>
+							<li class="padding_charts">
+								<img class="img" src="Images/From our editors/Lofi Beats.jfif" alt="lofi beats">
+								<p>chill beats, lofi vibes, new tracks every week...</p>
 							</li>
-							<li>
-								<img src="" alt="Acoustic Throwbacks">
-								<p>Big hits from the world of acoustics.</p>
+							<li class="padding_charts">
+								<img class="img" src="Images/From our editors/All Out 2020s.jfif" alt="All Out 2020s">
+								<p>The biggest songs of the 2020s. Cover: Doja Cat</p>
 							</li>
-							<li>
-								<img src="" alt="2010s Hip-Hop">
-								<p>Taking it back to the 2010s. Cover: Chief Keef</p>
+							<li class="padding_charts">
+								<img class="img" src="Images/From our editors/Chillout Lounge.jfif" alt="Chillout Lounge">
+								<p>Just lean back and enjoy relaxed beats.</p>
 							</li>
-							<li>
-								<img src="" alt="2000s Hip-Hop">
-								<p>Taking it back to the 2000s. Cover: Kid Cudi</p>
+							<li class="padding_charts">
+								<img class="img" src="Images/From our editors/Today's Top Hits.jfif" alt="Today's Top Hits">
+								<p>The hottest 50. Cover: Lady Gaga & Bruno Mars</p>
 							</li>
-							<li>
-								<img src="" alt="I Love My '90s Hip-Hop">
-								<p>Real rap music from the golden era.</p>
+							<li class="padding_charts">
+								<img class="img" src="Images/From our editors/Jazz in the Background.jfif" alt="Jazz in the Background">
+								<p>Soft instrumental Jazz for all your activities.</p>
 							</li>
-							<li>
-								<img src="" alt="I Love My '90s Hip-Hop">
-								<p>Anthems from the early days of recorded rap music.</p>
+							<li class="padding_charts">
+								<img class="img" src="Images/From our editors/All Out 80s.jfif" alt="All Out 80s">
+								<p>The biggest songs of the 1980s. Cover: Bruce...</p>
 							</li>
 						</ul>
 					</li>
-					<li>
-						<ul>
+					<li class="row space_between wrap">
+						<ul class="element_height">
 							<h4>Company</h4>
 							<li>About</li>
 							<li>Jobs</li>
 							<li>For the Record</li>
 						</ul>
-						<ul>
+						<ul class="element_height">
 							<h4>Communities</h4>
 							<li>For Arstists</li>
 							<li>Developers</li>
@@ -282,12 +246,12 @@
 							<li>Investors</li>
 							<li>Vendors</li>
 						</ul>
-						<ul>
+						<ul class="element_height">
 							<h4>Useful links</h4>
 							<li>Support</li>
 							<li>Free Mobile App</li>
 						</ul>
-						<ul>
+						<ul class="element_height">
 							<h4>Spotify Plans</h4>
 							<li>Premium Individual</li>
 							<li>Premium Duo</li>
@@ -295,22 +259,22 @@
 							<li>Premium Student</li>
 							<li>Spotify Free</li>
 						</ul>
-						<ul>
-							<button>Instagram</button>
-							<button>X</button>
-							<button>Facebook</button>
+						<ul class="element_height">
+							<button><img src="svg/Instagram.svg" alt="Instagram icon"></button>
+							<button><img src="svg/X.svg" alt="X icon"></button>
+							<button><img src="svg/Facebook.svg" alt="Facebook icon"></button>
 						</ul>
 					</li>
-					<li></li>
-					<li>© 2024 Spotify AB</li>
+					<li class="line"></li>
+					<li class="padding_end">© 2024 Spotify AB</li>
 				</ul>
 			</section>
 		</main>
 		<footer>
-			<ul class="row space_between">
+			<ul class="row space_between center">
 				<li>
-					<h5>Preview of Spotify</h5>
-					<p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+					<h5 class="margin0">Preview of Spotify</h5>
+					<p class="margin0">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
 				</li>
 				<li>
 					<button>Sign up free</button>
