@@ -1,0 +1,140 @@
+h3:hover {
+    text-decoration: underline;
+}
+
+.height_bottom:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.social_media:hover {
+    background-color: #727272;
+}
+
+.responsive_library {
+    transition: 0.2s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+
+.responsive_library:hover {
+    filter: brightness(1.5);
+}
+
+.add_icon {
+    transition: 0.2s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+
+.add_icon:hover {
+    filter: brightness(1.5);
+    background-color: #1e1e1e;
+}
+
+.language:hover {
+    border-color: var(--white);
+    transform: scale(1.05);
+}
+
+.show_all:hover, .titles:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--white);
+}
+
+.home_icon:hover {
+    transform: scale(1.05);
+}
+
+.search_padding:hover > .searchbar {
+    border: #404040 solid 1px;
+    background-color: #2a2a2a;
+}
+
+.search_padding:hover > .search_icon {
+    filter: brightness(1.5);
+}
+
+.browse_border:hover > .browse_responsive {
+    transform: scale(1.05);
+    filter: brightness(1.5);
+}
+
+.searchbar {
+    transition-delay: 0.1s;
+    transition-duration: 0.1s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+.search_padding > .searchbar:focus {
+    border: var(--white) solid 2px;
+}
+
+.searchbar:focus + .browse_border > .browse_filled {
+    opacity: 1;
+}
+
+.searchbar:focus + .browse_border > .browse_responsive {
+    opacity: 0;
+}
+
+.search_width:focus-within > .home_icon > .home_empty_responsive {
+    opacity: 1;
+}
+
+.search_width:focus-within > .home_icon > .home_responsive {
+    opacity: 0;
+}
+
+.browse_filled {
+    margin-top: -24px;
+    opacity: 0;
+}
+
+.home_empty_responsive {
+    margin-top: -24px;
+    opacity: 0;
+}
+
+.sign_up:hover {
+    transform: scale(1.05);
+    color: var(--white);
+}
+
+.log_in:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.padding_charts:hover {
+    border-radius: 6px;
+    background-color: #1e1e1e;
+}
+
+.play {
+    opacity: 0;
+    transition: 0.3s;
+    transition-timing-function: all;
+}
+
+.padding_charts:hover > .play_position > .play {
+    margin-top: -8px;
+    margin-bottom: 8px;
+    opacity: 1;
+}
+
+.play:hover {
+    transform: scale(1.05);
+    background-color: #3be377;
+}
+
+.containers_button:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.sign_up_footer:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}

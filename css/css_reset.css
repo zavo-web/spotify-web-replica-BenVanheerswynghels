@@ -1,24 +1,23 @@
-html, body, nav, ul, p {
+::-webkit-scrollbar {
+	display: none;
+}
+
+html, body, nav, ul, p, form {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
-	font-family: sans-serif;
 }
 
 ul {
 	list-style: none;
 }
 
-body {
-    background-color: #000;
-    color: #FFF;
-}
-
-button {
+button, input {
     border: none;
     margin: 0;
     padding: 0;
-    background: transparent;
-	color: #FFF;
+    background-color: transparent;
+	outline: none;
+	cursor: pointer;
 }

@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'SpotifyMixUI-Bold';
+    src: url('https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SpotifyMixUI-Regular';
+    src: url('https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SpotifyMixUITitle-Bold';
+    src: url('https://encore.scdn.co/fonts/SpotifyMixUITitle-Bold-37290f1de77f297fcc26d71e9afcf43f.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SpotifyMixUITitle-Extrabold';
+    src: url('https://encore.scdn.co/fonts/SpotifyMixUITitle-Extrabold-ba6c73cd7f82c81e49cf2204017803ed.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SpotifyMixUITitleVariable';
+    src: url('https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2') format('woff2');
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --text: #B3B3B3;
+    --bg1: #1f1f1f;
+    --font1: 'SpotifyMixUI-Regular', sans-serif;
+    --font2: 'SpotifyMixUI-Bold', sans-serif;
+    --font3: 'SpotifyMixUITitle-Bold', sans-serif;
+    --font4: 'SpotifyMixUITitle-Extrabold', sans-serif;
+    --font5: 'SpotifyMixUITitleVariable', sans-serif;
+}
+
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+footer {
+    background-image: linear-gradient(90deg, #af2896, #509bf5)
+}
+
+h3 {
+    font-family: var(--font5);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p {
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: var(--font2);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.containers_button {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: var(--font2);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.containers {
+    background-color: var(--bg1);
+}
+
+.line {
+    background-color: #2a2a2a;
+}
+
+.searchbar {
+    background-color: var(--bg1);
+}
+
+::placeholder {
+    color: var(--text);
+    font-family: var(--font1);
+    font-size: 16px;
+ }
+
+.home_icon {
+    background-color: var(--bg1);
+}
+
+.log_in {
+    color: var(--black);
+    background-color: var(--white);
+    font-family: var(--font2);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sign_up {
+    font-family: var(--font2);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sign_up_footer {
+    color: var(--black);
+    background-color: var(--white);
+    font-family: var(--font2);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.section_border {
+    background-color: #121212;
+}
+
+.social_media {
+    background-color: var(--bg1);
+}
+
+.grey_text {
+    color: var(--text);
+}
+
+.element_margin {
+    font-family: var(--font1);
+    font-size: 11px;
+}
+
+.padding_cookies {
+    font-family: var(--font1);
+    font-size: 12px;
+}
+
+.language {
+    font-family: var(--font2);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.height_bottom {
+    color: var(--text);
+    font-family: var(--font1);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.containers_title {
+    font-family: var(--font2);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.containers_text {
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.padding_end {
+    color: var(--text);
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer_title {
+    font-family: var(--font2);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer_text {
+    font-family: var(--font1);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.library_text {
+    font-family: var(--font2);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.titles {
+    font-family: var(--font3);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.show_all {
+    color: var(--text);
+    font-family: var(--font2);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.section_color {
+    background-color: rgb(83, 83, 83);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0px, rgb(18, 18, 18) 256px);
+}
+
+.play {
+    background-color: #1ed760;
+}

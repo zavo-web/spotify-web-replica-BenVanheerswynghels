@@ -3,13 +3,16 @@ body {
 }
 
 main {
-    padding: 0px 8px;
     max-height: calc(100% - 130px);
+    padding: 8px 0px;
+    column-gap: 8px;
+    width: 100%;
 }
 
 header {
     height: 48px;
     padding: 8px;
+    margin: -8px;
 }
 
 footer {
@@ -23,21 +26,37 @@ footer {
 
 .img {
     width: 100%;
+    border-radius: 6px;
+}
+
+.img_round {
+    border-radius: 100%;
 }
 
 .padding_charts {
     padding: 12px;
-    min-width: 162.672px;
-    max-width: 213.078px;
+    margin: 0px -12px;
+    min-width: 150px;
+    max-width: 200px;
 }
 
 .padding_section_charts {
-    padding: 4px 18px 72px;
+    padding: 15px 18px 72px;
+    width: 70%;
+}
+
+.chards_grid {
+    padding: 0px 12px;
+}
+
+.text_overflow {
+    margin-top: 12px;
+    height: 40px;
 }
 
 .width_section1 {
-    max-width: 360px;
-    min-width: 280px;
+    max-width: 380px;
+    min-width: 340px;
 }
 
 .wrap_padding {
@@ -51,10 +70,20 @@ footer {
     margin-bottom: 24px;
 }
 
+.add_icon {
+    border-radius: 100%;
+    padding: 8px;
+}
+
 .element_margin {
     margin-bottom: 4px;
     margin-right: 16px;
     height: 29px;
+}
+
+.language_bottom_grid {
+    width: 30%;
+    overflow-y: hidden;
 }
 
 .language {
@@ -62,10 +91,16 @@ footer {
     height: 32px;
     width: 96px;
     margin-bottom: 24px;
+    border: #7c7c7c solid 1px;
+    border-radius: 1000px;
+}
+
+.language_icon {
+    padding-right: 4px;
 }
 
 .padding_library {
-    padding: 12px 16px 36px;
+    padding: 12px 16px 24px;
     height: 40px;
 }
 
@@ -75,14 +110,143 @@ footer {
 
 .line {
     height: 1px;
-    background-color: #2a2a2a;
     margin-bottom: 24px;
 }
 
 .element_height {
-    height: 256px;
+    height: 234px;
 }
 
 .padding_end {
     padding-top: 16px;
+}
+
+.padding_container {
+    padding: 0px 8px 8px;
+    max-height: calc(100% - 84px);
+}
+
+.containers {
+    height: 102px;
+    padding: 16px 20px;
+    margin: 8px 0px;
+    border-radius: 8px;
+}
+
+.containers_title {
+    padding-bottom: 8px;
+    height: 22px;
+}
+
+.containers_text {
+    padding-bottom: 20px;
+    height: 20px;
+}
+
+.containers_button {
+    border-radius: 1000px;
+    height: 32px;
+    width: 125.55px;
+
+}
+
+.spotify_icon {
+    width: 72px;
+    height: 48px;
+}
+
+.library_margin {
+    margin-right: 12px;
+    padding-left: 8px;
+}
+
+.browse_border {
+    border-left: #7c7c7c solid 1px;
+    padding: 0px 4px 0px 12px;
+    width: 24px;
+}
+
+.search_padding {
+    width: 85%;
+}
+
+.search_width {
+    width: 40%;
+    margin-left: 140px;
+}
+
+.searchbar {
+    height: 48px;
+    padding: 12px 64px 12px 48px;
+    width: 100%;
+    border-radius: 1000px;
+}
+
+.home_icon {
+    padding: 12;
+    margin-right: 8px;
+    border-radius: 1000px;
+    width: 48px;
+}
+
+.search_icon {
+    padding: 0px 12px;
+}
+
+.sign_up {
+    width: 95.2px;
+    height: 48px;
+    padding: 8px 32px 8px 8px;
+}
+
+.log_in {
+    width: 108.3px;
+    height: 48px;
+    padding: 8px 32px;
+    border-radius: 1000px;
+}
+
+.text_spacing {
+    margin: 8px 0px 4px 0px;
+}
+
+.section_border {
+    border-radius: 8px;
+}
+
+.height_bottom, h4 {
+    height: 22px;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.social_media {
+    margin-left: 16px;
+    padding: 12px;
+    border-radius: 100%;
+}
+
+.padding_bottom_section {
+    padding: 80px 14px 40px;
+}
+
+.sign_up_footer {
+    border-radius: 1000px;
+    height: 48px;
+    width: 160px;
+}
+
+.button_width {
+    width: 142.39px;
+}
+
+.play {
+    border-radius: 100%;
+    padding: 12px;
+    width: 24px;
+}
+
+.section_color {
+    height: 256px;
+    width: calc(100% + 36px);
 }

@@ -1,283 +1,336 @@
-<!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="utf-8" />
 		<title>Spotify - Web Player replica</title>
-		<link rel="icon" href="Images/Spotify.png"/>
-		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="Images/Spotify.png" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUITitle-Bold-37290f1de77f297fcc26d71e9afcf43f.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUITitle-Extrabold-ba6c73cd7f82c81e49cf2204017803ed.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" href="https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 	</head>
 	<body>
 		<header>
 			<nav>
 				<ul class="row space_between height">
-					<li><img src="svg/Spotify.svg" alt="Spotify icon"></li>
-					<li class="row">
-						<button><img src="svg/Home.svg" alt="Home icon"></button>
-						<section class="center"><label for="Search"></label>
-						<img src="svg/Search.svg" alt="Search icon">
-						<input type="text" id="Search" placeholder="What do you want to play?">
-						<img src="svg/Browse.svg" alt="Browse icon"></section>
+					<li class="spotify_icon full_center"><img src="svg/Spotify.svg" alt="Spotify icon" /></li>
+					<li class="row search_width">
+						<button class="home_icon">
+							<img class="home_responsive" src="svg/Home.svg" alt="Home icon" />
+							<img class="home_empty_responsive" src="svg/Home_empty.svg" alt="Home empty icon">
+						</button>
+						<form class="center search_padding">
+							<label for="Search"></label>
+							<img class="search_icon" src="svg/Search.svg" alt="Search icon" />
+							<input class="searchbar grey_text" type="text" id="Search" placeholder="What do you want to play?" />
+							<button class="browse_border">
+								<img class="browse_responsive" src="svg/Browse.svg" alt="Browse icon" />
+								<img class="browse_filled" src="svg/Browse_filled.svg" alt="Browse filled icon">
+							</button>
+						</form>
 					</li>
-					<li class="center">
-						<button>Sign up</button>
-						<button>Log in</button>
+					<li>
+						<button class="sign_up grey_text">Sign up</button>
+						<button class="log_in">Log in</button>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<main class="row">
-			<section class="width_section1">
-				<ul class="row space_between center padding_library">
-					<li class="row center">
-						<img src="svg/Library.svg" alt="Library icon"><p>Your Library</p>
-					</li>
-					<li>
-						<button><img src="svg/Add.svg" alt="Add icon"></button>
-					</li>
-				</ul>
-				<ul class="overflow">
-					<ul>
-						<li>Create your first playlist</li>
-						<li>It's easy, we'll help you</li>
-						<button>Create playlist</button>
+			<section class="section_border language_bottom_grid">
+				<section class="section_height">
+					<section>
+						<ul class="row space_between center padding_library">
+							<li class="row center grey_text responsive_library">
+								<img class="library_margin" src="svg/Library.svg" alt="Library icon" />
+								<p class="library_text">Your Library</p>
+							</li>
+							<li>
+								<button><img class="add_icon" src="svg/Add.svg" alt="Add icon" /></button>
+							</li>
+						</ul>
+					</section>
+					<section class="overflow padding_container">
+						<ul class="containers">
+							<li class="containers_title">Create your first playlist</li>
+							<li class="containers_text">It's easy, we'll help you</li>
+							<button class="containers_button">Create playlist</button>
+						</ul>
+						<ul class="containers">
+							<li class="containers_title">Let's find some podcasts to follow</li>
+							<li class="containers_text">We'll keep you updated on new episodes</li>
+							<button class="containers_button button_width">Browse Podcasts</button>
+						</ul>
+					</section>
+				</section>
+				<section class="language_bottom">
+					<ul class="row wrap wrap_padding grey_text">
+						<li class="element_margin center">Legal</li>
+						<li class="element_margin center">Safety & Privacy Center</li>
+						<li class="element_margin center">Privacy Policy</li>
+						<li class="element_margin center">Cookie Settings</li>
+						<li class="element_margin center">About Ads</li>
+						<li class="element_margin center">Accessibility</li>
 					</ul>
-					<ul>
-						<li>Let's find some podcasts to follow</li>
-						<li>We'll keep you updated on new episodes</li>
-						<button>Create playlist</button>
-					</ul>
-				</ul>
-				<ul class="row wrap wrap_padding">
-					<li class="element_margin center">Legal</li>
-					<li class="element_margin center">Safety & Privacy Center</li>
-					<li class="element_margin center">Privacy Policy</li>
-					<li class="element_margin center">Cookie Settings</li>
-					<li class="element_margin center">About Ads</li>
-					<li class="element_margin center">Accessibility</li>
-				</ul>
-				<p class="padding_cookies">Cookies</p>
-				<button class="language row"><img src="svg/Language.svg" alt="Language">English</button>
+					<p class="padding_cookies">Cookies</p>
+					<button class="language full_center row"><img class="language_icon" src="svg/Language.svg" alt="Language" />English</button>
+				</section>
 			</section>
-			<section class="overflow padding_section_charts">
+			<section class="overflow padding_section_charts section_border">
+				<section class="section_color"></section>
 				<ul>
 					<li>
 						<ul class="row space_between">
-							<li>Popular artist</li>
-							<li>Show all</li>
+							<li class="titles">Popular artist</li>
+							<li class="show_all">Show all</li>
 						</ul>
-						<ul class="row">
-							<li class="padding_charts">
-								<img class="img" src="Images/Artiesten/Lady Gaga.png" alt="Lady Gaga">
-								<h3>Lady Gaga</h3>
-								<p>Artist</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Artiesten/Billie Eilish.png" alt="Billie Eilish">
-								<h3>Billie Eilish</h3>
-								<p>Artist</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Artiesten/David Guetta.png" alt="David Guetta">
-								<h3>David Guetta</h3>
-								<p>Artist</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Artiesten/Cold Play.png" alt="Coldplay">
-								<h3>Coldplay</h3>
-								<p>Artist</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Artiesten/The Weekend.png" alt="The Weekend">
-								<h3>The Weekend</h3>
-								<p>Artist</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Artiesten/Rihanna.png" alt="Rihanna">
-								<h3>Rihanna</h3>
-								<p>Artist</p>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<ul class="row space_between">
-							<li>Popular albums and singles</li>
-							<li>Show all</li>
-						</ul>
-						<ul class="row">
-							<li class="padding_charts">
-								<img class="img" src="Images/Albums and singles/HIT ME HARD AND SOFT.jfif" alt="HIT ME HARD AND SOFT">
-								<h3>HIT ME HARD AND SOFT</h3>
-								<p>Billie Eilish</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Albums and singles/A LA VIE A LA MORT.jfif" alt="A LA VIE A LA MORT">
-								<h3>A LA VIE A LA MORT</h3>
-								<p>SDM</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Albums and singles/J'AI MENTI..jfif" alt="J'AI MENTI.">
-								<h3>J'AI MENTI.</h3>
-								<p>Damso</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Albums and singles/Fireworks & Rollerblades.jfif" alt="Fireworks & Rollerblades">
-								<h3>Fireworks & Rollerblades</h3>
-								<p>Benson Boone</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Albums and singles/Short n' Sweet.jfif" alt="Short n' Sweet">
-								<h3>Short n' Sweet</h3>
-								<p>Sabrina Carpenter</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Albums and singles/From Zero.jfif" alt="From Zero">
-								<h3>From Zero</h3>
-								<p>Linkin Park</p>
-							</li>
+						<ul class="row chards_grid">
+							<a class="padding_charts">
+								<img class="img img_round" src="Images/Artiesten/Lady Gaga.png" alt="Lady Gaga" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<h3 class="text_spacing">Lady Gaga</h3>
+								<p class="grey_text">Artist</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img img_round" src="Images/Artiesten/Billie Eilish.png" alt="Billie Eilish" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<h3 class="text_spacing">Billie Eilish</h3>
+								<p class="grey_text">Artist</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img img_round" src="Images/Artiesten/David Guetta.png" alt="David Guetta" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<h3 class="text_spacing">David Guetta</h3>
+								<p class="grey_text">Artist</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img img_round" src="Images/Artiesten/Cold Play.png" alt="Coldplay" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<h3 class="text_spacing">Coldplay</h3>
+								<p class="grey_text">Artist</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img img_round" src="Images/Artiesten/The Weekend.png" alt="The Weekend" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<h3 class="text_spacing">The Weekend</h3>
+								<p class="grey_text">Artist</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img img_round" src="Images/Artiesten/Rihanna.png" alt="Rihanna" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<h3 class="text_spacing">Rihanna</h3>
+								<p class="grey_text">Artist</p>
+							</a>
 						</ul>
 					</li>
 					<li>
 						<ul class="row space_between">
-							<li>Popular radio</li>
-							<li>Show all</li>
+							<li class="titles">Popular albums and singles</li>
+							<li class="show_all">Show all</li>
 						</ul>
-						<ul class="row">
-							<li class="padding_charts">
-								<img class="img" src="Images/Radio/ABBA.jfif" alt="ABBA">
-								<p>With Bee Gees, Elton John, Queen and more</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Radio/Michael Kiwanuka.jfif" alt="Michael Kiwanuka">
-								<p>With Leon Bridges, Khruangbin, Curtis Harding and more</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Radio/Coldplay.jfif" alt="Coldplay">
-								<p>With Harry Styles, Maroon 5, Bruno Mars and more</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Radio/Adele.jfif" alt="Adele">
-								<p>With Sam Smith, Bruno Mars, Lady Gaga and more</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Radio/Linkin Park.jfif" alt="Linkin Park">
-								<p>With Limp Bizkit, Green Day, Evanescence and more</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Radio/David Guett.jfif" alt="David Guetta">
-								<p>With Calvin Harris, Avicit, Pitbull and more</p>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<ul class="row space_between">
-							<li>Featured Charts</li>
-							<li>Show all</li>
-						</ul>
-						<ul class="row">
-							<li class="padding_charts">
-								<img class="img" src="Images/Featured/Top songs Global.jpg" alt="Top Songs global">
-								<p>Your weekly update of the most played tracks right now - Global.</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Featured/Top songs USA.jpg" alt="Top Songs USA">
-								<p>Your weekly update of the most played tracks right now - USA.</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Featured/Top 50 Global.jpg" alt="Top 50 GLOBAL">
-								<p>Your daily update of the most played tracks right now - Global.</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Featured/Top 50 USA.jpg" alt="Top 50 USA">
-								<p>Your daily update of the most played tracks right now - USA.</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Featured/Viral 50 Global.jpg" alt="Viral 50 GLOBAL">
-								<p>Your daily update of the most viral tracks right now - Global.</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/Featured/Viral 50 USA.jpg" alt="Viral 50 USA">
-								<p>Your daily update of the most viral tracks right now - USA.</p>
-							</li>
+						<ul class="row chards_grid">
+							<a class="padding_charts">
+								<img class="img" src="Images/Albums and singles/HIT ME HARD AND SOFT.jfif" alt="HIT ME HARD AND SOFT" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<h3 class="text_spacing">HIT ME HARD AND SOFT</h3>
+								<p class="grey_text">Billie Eilish</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img" src="Images/Albums and singles/A LA VIE A LA MORT.jfif" alt="A LA VIE A LA MORT" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<h3 class="text_spacing">A LA VIE A LA MORT</h3>
+								<p class="grey_text">SDM</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img" src="Images/Albums and singles/J'AI MENTI..jfif" alt="J'AI MENTI." />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<h3 class="text_spacing">J'AI MENTI.</h3>
+								<p class="grey_text">Damso</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img" src="Images/Albums and singles/Fireworks & Rollerblades.jfif" alt="Fireworks & Rollerblades" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<h3 class="text_spacing">Fireworks & Rollerblades</h3>
+								<p class="grey_text">Benson Boone</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img" src="Images/Albums and singles/Short n' Sweet.jfif" alt="Short n' Sweet" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<h3 class="text_spacing">Short n' Sweet</h3>
+								<p class="grey_text">Sabrina Carpenter</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img" src="Images/Albums and singles/From Zero.jfif" alt="From Zero" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<h3 class="text_spacing">From Zero</h3>
+								<p class="grey_text">Linkin Park</p>
+							</a>
 						</ul>
 					</li>
 					<li>
 						<ul class="row space_between">
-							<li>Playlist from our Editors</li>
-							<li>Show all</li>
+							<li class="titles">Popular radio</li>
+							<li class="show_all">Show all</li>
 						</ul>
-						<ul class="row">
-							<li class="padding_charts">
-								<img class="img" src="Images/From our editors/Lofi Beats.jfif" alt="lofi beats">
-								<p>chill beats, lofi vibes, new tracks every week...</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/From our editors/All Out 2020s.jfif" alt="All Out 2020s">
-								<p>The biggest songs of the 2020s. Cover: Doja Cat</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/From our editors/Chillout Lounge.jfif" alt="Chillout Lounge">
-								<p>Just lean back and enjoy relaxed beats.</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/From our editors/Today's Top Hits.jfif" alt="Today's Top Hits">
-								<p>The hottest 50. Cover: Lady Gaga & Bruno Mars</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/From our editors/Jazz in the Background.jfif" alt="Jazz in the Background">
-								<p>Soft instrumental Jazz for all your activities.</p>
-							</li>
-							<li class="padding_charts">
-								<img class="img" src="Images/From our editors/All Out 80s.jfif" alt="All Out 80s">
-								<p>The biggest songs of the 1980s. Cover: Bruce...</p>
-							</li>
-						</ul>
-					</li>
-					<li class="row space_between wrap">
-						<ul class="element_height">
-							<h4>Company</h4>
-							<li>About</li>
-							<li>Jobs</li>
-							<li>For the Record</li>
-						</ul>
-						<ul class="element_height">
-							<h4>Communities</h4>
-							<li>For Arstists</li>
-							<li>Developers</li>
-							<li>Advertising</li>
-							<li>Investors</li>
-							<li>Vendors</li>
-						</ul>
-						<ul class="element_height">
-							<h4>Useful links</h4>
-							<li>Support</li>
-							<li>Free Mobile App</li>
-						</ul>
-						<ul class="element_height">
-							<h4>Spotify Plans</h4>
-							<li>Premium Individual</li>
-							<li>Premium Duo</li>
-							<li>Premium Family</li>
-							<li>Premium Student</li>
-							<li>Spotify Free</li>
-						</ul>
-						<ul class="element_height">
-							<button><img src="svg/Instagram.svg" alt="Instagram icon"></button>
-							<button><img src="svg/X.svg" alt="X icon"></button>
-							<button><img src="svg/Facebook.svg" alt="Facebook icon"></button>
+						<ul class="row chards_grid">
+							<a class="padding_charts">
+								<img class="img" src="Images/Radio/ABBA.jfif" alt="ABBA" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">With Bee Gees, Elton John, Queen and more</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img" src="Images/Radio/Michael Kiwanuka.jfif" alt="Michael Kiwanuka" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">With Leon Bridges, Khruangbin, Curtis Harding and more</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img" src="Images/Radio/Coldplay.jfif" alt="Coldplay" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">With Harry Styles, Maroon 5, Bruno Mars and more</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img" src="Images/Radio/Adele.jfif" alt="Adele" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">With Sam Smith, Bruno Mars, Lady Gaga and more</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img" src="Images/Radio/Linkin Park.jfif" alt="Linkin Park" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">With Limp Bizkit, Green Day, Evanescence and more</p>
+							</a>
+							<a class="padding_charts">
+								<img class="img" src="Images/Radio/David Guett.jfif" alt="David Guetta" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">With Calvin Harris, Avicit, Pitbull and more</p>
+							</a>
 						</ul>
 					</li>
-					<li class="line"></li>
-					<li class="padding_end">© 2024 Spotify AB</li>
+					<li>
+						<ul class="row space_between">
+							<li class="titles">Featured Charts</li>
+							<li class="show_all">Show all</li>
+						</ul>
+						<ul class="row chards_grid">
+							<a class="padding_charts button_text">
+								<img class="img" src="Images/Featured/Top songs Global.jpg" alt="Top Songs global" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">Your weekly update of the most played tracks right now - Global.</p>
+							</a>
+							<a class="padding_charts button_text">
+								<img class="img" src="Images/Featured/Top songs USA.jpg" alt="Top Songs USA" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">Your weekly update of the most played tracks right now - USA.</p>
+							</a>
+							<a class="padding_charts button_text">
+								<img class="img" src="Images/Featured/Top 50 Global.jpg" alt="Top 50 GLOBAL" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">Your daily update of the most played tracks right now - Global.</p>
+							</a>
+							<a class="padding_charts button_text">
+								<img class="img" src="Images/Featured/Top 50 USA.jpg" alt="Top 50 USA" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">Your daily update of the most played tracks right now - USA.</p>
+							</a>
+							<a class="padding_charts button_text">
+								<img class="img" src="Images/Featured/Viral 50 Global.jpg" alt="Viral 50 GLOBAL" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">Your daily update of the most viral tracks right now - Global.</p>
+							</a>
+							<a class="padding_charts button_text">
+								<img class="img" src="Images/Featured/Viral 50 USA.jpg" alt="Viral 50 USA" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">Your daily update of the most viral tracks right now - USA.</p>
+							</a>
+						</ul>
+					</li>
+					<li>
+						<ul class="row space_between">
+							<li class="titles">Playlist from our Editors</li>
+							<li class="show_all">Show all</li>
+						</ul>
+						<ul class="row chards_grid">
+							<a class="padding_charts button_text">
+								<img class="img" src="Images/From our editors/Lofi Beats.jfif" alt="lofi beats" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">chill beats, lofi vibes, new tracks every week...</p>
+							</a>
+							<a class="padding_charts button_text">
+								<img class="img" src="Images/From our editors/All Out 2020s.jfif" alt="All Out 2020s" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">The biggest songs of the 2020s. Cover: Doja Cat</p>
+							</a>
+							<a class="padding_charts button_text">
+								<img class="img" src="Images/From our editors/Chillout Lounge.jfif" alt="Chillout Lounge" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">Just lean back and enjoy relaxed beats.</p>
+							</a>
+							<a class="padding_charts button_text">
+								<img class="img" src="Images/From our editors/Today's Top Hits.jfif" alt="Today's Top Hits" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">The hottest 50. Cover: Lady Gaga & Bruno Mars</p>
+							</a>
+							<a class="padding_charts button_text">
+								<img class="img" src="Images/From our editors/Jazz in the Background.jfif" alt="Jazz in the Background" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">Soft instrumental Jazz for all your activities.</p>
+							</a>
+							<a class="padding_charts button_text">
+								<img class="img" src="Images/From our editors/All Out 80s.jfif" alt="All Out 80s" />
+								<button class="play_position"><img class="play" src="svg/Play.svg" alt="Play button"></button>
+								<p class="text_overflow grey_text">The biggest songs of the 1980s. Cover: Bruce...</p>
+							</a>
+						</ul>
+					</li>
+					<ul class="padding_bottom_section">
+						<li class="row space_between wrap">
+							<ul class="element_height">
+								<h4>Company</h4>
+								<li class="height_bottom">About</li>
+								<li class="height_bottom">Jobs</li>
+								<li class="height_bottom">For the Record</li>
+							</ul>
+							<ul class="element_height">
+								<h4>Communities</h4>
+								<li class="height_bottom">For Arstists</li>
+								<li class="height_bottom">Developers</li>
+								<li class="height_bottom">Advertising</li>
+								<li class="height_bottom">Investors</li>
+								<li class="height_bottom">Vendors</li>
+							</ul>
+							<ul class="element_height">
+								<h4>Useful links</h4>
+								<li class="height_bottom">Support</li>
+								<li class="height_bottom">Free Mobile App</li>
+							</ul>
+							<ul class="element_height">
+								<h4>Spotify Plans</h4>
+								<li class="height_bottom">Premium Individual</li>
+								<li class="height_bottom">Premium Duo</li>
+								<li class="height_bottom">Premium Family</li>
+								<li class="height_bottom">Premium Student</li>
+								<li class="height_bottom">Spotify Free</li>
+							</ul>
+							<ul class="element_height">
+								<button class="social_media"><img src="svg/Instagram.svg" alt="Instagram icon" /></button>
+								<button class="social_media"><img src="svg/X.svg" alt="X icon" /></button>
+								<button class="social_media"><img src="svg/Facebook.svg" alt="Facebook icon" /></button>
+							</ul>
+						</li>
+						<li class="line"></li>
+						<li class="padding_end">© 2024 Spotify AB</li>
+					</ul>
 				</ul>
 			</section>
 		</main>
 		<footer>
 			<ul class="row space_between center">
 				<li>
-					<h5 class="margin0">Preview of Spotify</h5>
-					<p class="margin0">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+					<h5 class="margin0 footer_title">Preview of Spotify</h5>
+					<p class="margin0 footer_text">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
 				</li>
 				<li>
-					<button>Sign up free</button>
+					<button class="sign_up_footer">Sign up free</button>
 				</li>
 			</ul>
 		</footer>
